@@ -1,0 +1,20 @@
+{
+	"name": "AzureSynapseAnalytics2",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"description": "General (dynamic) connection that connects to any Synapse database instance. Input: dbFQDN and dbName.  *Note, that this supports the connection to either of SQL on Demand (Serverless) or SQL Pools as required.",
+		"parameters": {
+			"dbFQDN": {
+				"type": "string"
+			},
+			"dbName": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "AzureSqlDW",
+		"typeProperties": {
+			"connectionString": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=@{linkedService().dbFQDN};Initial Catalog=@{linkedService().dbName}"
+		}
+	}
+}

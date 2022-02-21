@@ -1,0 +1,28 @@
+{
+	"name": "Binary2",
+	"properties": {
+		"description": "test",
+		"linkedServiceName": {
+			"referenceName": "blobInlineParquet",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"aaaaa": {
+				"type": "object",
+				"defaultValue": {
+					"a": "b",
+					"c": "d"
+				}
+			}
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "asasas"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,17 @@
+{
+	"name": "SapOdpDataset1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SapOdp2",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SapOdpDataset",
+		"schema": [],
+		"typeProperties": {
+			"context": "ABAP_CDS",
+			"odpName": "ACMTST_SQLV_DLAN$P"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

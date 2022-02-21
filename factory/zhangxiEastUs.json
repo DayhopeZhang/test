@@ -1,0 +1,15 @@
+{
+	"name": "zhangxiEastUs",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned,UserAssigned",
+		"principalId": "71c4f68a-09c3-42c7-8e14-5b8a4f746edb",
+		"tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+		"userAssignedIdentities": {
+			"/subscriptions/eecfb6ee-86f1-45e1-bb7e-1f5b6bdf3951/resourcegroups/zhangxi/providers/Microsoft.ManagedIdentity/userAssignedIdentities/zhangxiUAMI": {
+				"clientId": "60a9bc96-9283-48db-b2ca-08f73546a10f",
+				"principalId": "edb38ca5-2424-4aef-b543-64cdcf1f7d4e"
+			}
+		}
+	}
+}

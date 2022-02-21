@@ -1,0 +1,19 @@
+{
+	"name": "AzureMySql1",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureMySql",
+		"typeProperties": {
+			"connectionString": "Server=mysqlacceptancetest.mysql.database.azure.com;Port=3306;Database=northwind_mysql;UID=mysqladmin@mysqlacceptancetest;SSLMode=1;UseSystemTrustStore=0",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "AzureKeyVault1",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "ADMS-UX-TEST-AzureMySql-Pass"
+			}
+		}
+	}
+}

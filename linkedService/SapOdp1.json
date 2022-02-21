@@ -1,0 +1,29 @@
+{
+	"name": "SapOdp1",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SapOdp",
+		"typeProperties": {
+			"clientId": "001",
+			"language": "",
+			"sncMode": false,
+			"userName": "testuser",
+			"subscriberName": "",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "AzureKeyVault1",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "SAP-ODP-Pass"
+			},
+			"server": "10.172.4.80",
+			"systemNumber": "02"
+		},
+		"connectVia": {
+			"referenceName": "integrationRuntime1",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

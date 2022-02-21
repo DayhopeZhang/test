@@ -1,0 +1,89 @@
+{
+	"name": "CosmosDbSqlApiCollection2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "CosmosDb1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "CosmosDbSqlApiCollection",
+		"schema": {
+			"type": "object",
+			"properties": {
+				"lastAttemptedAt": {
+					"type": "integer"
+				},
+				"startAfter": {
+					"type": "integer"
+				},
+				"status": {
+					"type": "string"
+				},
+				"updatedAt": {
+					"type": "integer"
+				},
+				"descriptor": {
+					"type": "object",
+					"properties": {
+						"amountInRupeesWithSymbol": {
+							"type": "string"
+						},
+						"params": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"remarks": {
+							"type": "null"
+						},
+						"userIdentification": {
+							"type": "object",
+							"properties": {
+								"emailAddress": {
+									"type": "string"
+								},
+								"orgId": {
+									"type": "string"
+								}
+							}
+						},
+						"communicationType": {
+							"type": "string"
+						},
+						"supplierName": {
+							"type": "string"
+						},
+						"invoiceRefId": {
+							"type": "string"
+						},
+						"paymentAmountStr": {
+							"type": "string"
+						},
+						"invoiceCounterPartConfirmed": {
+							"type": "string"
+						},
+						"creditDetails": {
+							"type": "object",
+							"properties": {
+								"availableLimitStr": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"abandonAfter": {
+					"type": "integer"
+				},
+				"createdAt": {
+					"type": "integer"
+				}
+			}
+		},
+		"typeProperties": {
+			"collectionName": "test_collection"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
